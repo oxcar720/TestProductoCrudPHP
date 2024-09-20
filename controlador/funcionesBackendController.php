@@ -39,6 +39,7 @@ $fun_back = new FuncionesBackend();
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['accion']) && $_POST['accion']=="ejecutar_funcion" && isset($_POST['valor'])) {
         $lista_convinaciones=$fun_back->obtenerConbinacionesPorValor($_POST['valor']);
+        $valor_usado=$_POST['valor'];
     }
 }else{
     $productos = $fun_back->obtenerTodosLosProductos();

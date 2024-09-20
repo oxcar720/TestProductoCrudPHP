@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-    <title>Editar Producto</title>
+    
+    <title><?php echo (isset($producto) && $producto)? 'Editar Producto': 'Agregar Producto'; ?></title>
 </head>
 <body>
     <div class="container mt-5">
-        <h1 class="text-center mb-4">Editar producto</h1>
+        <h1 class="text-center mb-4"><?php echo (isset($producto) && $producto)? 'Editar Producto': 'Agregar Producto'; ?></h1>
     </div>
     <div class="position-absolute top-50 start-50 translate-middle" style="width: 400px;">
         <form method="POST" action="/controlador/ProductoController.php" enctype="multipart/form-data" autocomplete="off"> 

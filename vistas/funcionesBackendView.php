@@ -30,7 +30,7 @@
                 <div class="row">
                     <div class="col">
                         <input type='hidden' name='accion' value='ejecutar_funcion'> 
-                        <input type="number" class="form-control" id="input_valor" name="valor" required>
+                        <input type="number" class="form-control" id="input_valor" name="valor" required value="<?php echo isset($valor_usado)?$valor_usado:''?>">
                     </div>
                     <div class="col">
                         <button id="btn-ejecutar-funcion" class="btn btn-primary">Ejecutar Funcion</button>
