@@ -1,0 +1,44 @@
+.divisor{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    /* background-color: red; */
+    justify-content: space-between;
+}
+.consola {
+    padding: 10px;
+    width: 100%;
+    background-color: #1e1e1e;
+    color: #d4d4d4; 
+    font-family: 'Courier New', Courier, monospace; 
+    
+    line-height: 1.2;
+    border-radius: 4px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    white-space: pre-wrap; 
+    overflow: auto; 
+}
+.table-combinaciones {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table-combinaciones th, .table-combinaciones td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.table-combinaciones th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.table-combinaciones tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table-combinaciones tr:hover {
+    background-color: #ddd;
+}

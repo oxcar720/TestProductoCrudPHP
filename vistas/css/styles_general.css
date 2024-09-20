@@ -1,0 +1,83 @@
+.col{
+    background-color: transparent; 
+    border: none;
+    
+}
+.selectable{
+    cursor: pointer;
+}
+.container{
+    padding-bottom: 10px;
+}
+
+.selected{
+    --bs-table-bg: rgb(69, 102, 248);
+    --bs-table-striped-bg: rgb(69, 102, 248);
+    --bs-table-hover-bg: rgb(69, 102, 248);
+}
+
+
+.mensaje {
+    width: 400px;
+    position: fixed;
+    top: 20px; /* Ajusta según sea necesario */
+    right: 20px; /* Ajusta según sea necesario */
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    z-index: 1000;
+    display: none; /* Oculta por defecto */
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.mensaje-exito {
+    background-color: #28a745; /* Verde claro */
+}
+
+.mensaje-error {
+    background-color: #dc3545; /* Rojo claro */
+}
+
+.mensaje-api{
+    background-color: #0d6efd;
+}
+
+.mensaje.mostrar {
+    display: block;
+    opacity: 1;
+    transform: translateY(0); /* Ajusta según sea necesario */
+}
+
+@keyframes flotante {
+    0% { transform: translateY(-10px); }
+    50% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+.mayor{
+    --bs-table-bg: rgb(194, 191, 24);
+    --bs-table-striped-bg: rgb(201, 218, 47);
+    --bs-table-hover-bg: rgb(169, 207, 30);
+}
+
+.contenedor_mensajes {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 400px;
+    z-index: 9999;
+}
+
+.mensaje_api {
+    background-color: #406cfd; /* Azul claro */
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    margin-bottom: 10px; /* Deja espacio entre los mensajes */
+}
